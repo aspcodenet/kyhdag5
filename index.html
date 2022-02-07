@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/searchresults" method="get" >
+        <input type="text" name="sokord" placeholder="skriv in sökord">
+        <button type="submit">Sök</button>
+    </form>
+
+
+    <form action="https://formshow.systementor.se/" method="post" >
+
+        <input type="checkbox" name="ok" id="ok">
+        <label for="ok">Are you sure?</label>
+
+<!-- 
+    bool ok;
+
+         -->
+
+         Please select countries where you could work
+         <select name="countries" multiple>
+           <option value="SE">Sweden</option>
+           <option value="NO">Norway</option>
+           <option value="DK">Danmark</option>
+           <option value="FI">Finland</option>
+       </select>         
+
+
+
+
+         <select name="country">
+             <option>Please select a country</option>
+            <option value="SE">Sweden</option>
+            <option value="NO">Norway</option>
+            <option value="DK">Danmark</option>
+            <option value="FI">Finland</option>
+        </select>         
+
+
+        <input type="radio" name="position" id="position1" value="G">
+        <label for="position1">Goalie</label>
+        
+        <input type="radio" name="position" id="position2" value="D">
+        <label for="position2">Defence</label>
+        
+        <input type="radio" name="position2" id="position3" value="F">
+        <label for="position3">Forwatd</label>
+
+
+
+        <label for="namn">Ange ditt namn</label>
+        <input id="namn" name="name" value="Stefan"> 
+
+
+        <input type="radio" name="color" id="red" value="#F00">
+        <label for="red">Red</label>
+        
+        <input type="radio" name="color" id="green" value="#0F0">
+        <label for="green">Green</label>
+        
+        <input type="radio" name="color" id="blue" value="#00F">
+      
+        <label for="blue">Blue</label>
+
+        <input type="text" name="username" placeholder="Anvnamn">
+        <input type="password" name="pwd" placeholder="Lösen">
+
+        <label for="artikeltext">ANge artickeö</label>
+        <textarea id="artikeltext" name="artikeltext"  rows="8" cols="50">
+               Skriv in artikeln här 
+        </textarea>
+
+        <button type="submit">Logga in</button>
+        <!-- 1. Skapa sträng med data: sokord=arduino&county=Stockholm 
+            2. Hur ska det skickas METHOD
+            3. Om Get så skicka genom att ändra URL
+
+            (Method = GET - använder vi i SÖK-scenarios)
+            - kan bara ta 4kb
+
+            3 (alt) OM POST så - samma url men datam (strängen från #1)
+            skickas dolt - POST kan ta "hur stora som helst" fält
+        -->
+    </form>
+
+
+
+    <form action="https://formshow.systementor.se/" method="post" >
+        <input type="text" name="sokord" placeholder="skriv in sökord">
+        <input type="text" name="county" placeholder="skriv in län">
+        <button type="submit">Skicka</button>
+        <!-- 1. Skapa sträng med data: sokord=arduino&county=Stockholm 
+            2. Hur ska det skickas METHOD
+            3. Om Get så skicka genom att ändra URL
+
+            (Method = GET - använder vi i SÖK-scenarios)
+            - kan bara ta 4kb
+
+            3 (alt) OM POST så - samma url men datam (strängen från #1)
+            skickas dolt - POST kan ta "hur stora som helst" fält
+        -->
+    </form>
+</body>
+</html>
